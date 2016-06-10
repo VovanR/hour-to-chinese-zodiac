@@ -1,6 +1,6 @@
 {
   "name": "hour-to-chinese-zodiac",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Convert hour to chinese zodiac name: 8 → 'dragon'",
   "license": "MIT",
   "repository": "VovanR/hour-to-chinese-zodiac",
