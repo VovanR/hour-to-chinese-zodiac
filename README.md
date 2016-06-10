@@ -9,7 +9,7 @@
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
 
-> Convert hour to chinese zodiac name: 8 → 'dragon'
+> Convert hour to [chinese zodiac][wiki-chinese-zodiac] name: 8 → 'dragon'
 
 Demo: [vovanr.github.io/hour-to-chinese-zodiac][demo]
 
@@ -37,6 +37,7 @@ hourToChineseZodiac();
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
+[wiki-chinese-zodiac]: https://en.wikipedia.org/wiki/Chinese_zodiac#Hours
 [demo]: http://vovanr.github.io/hour-to-chinese-zodiac
 
 [commitizen-url]: http://commitizen.github.io/cz-cli/
