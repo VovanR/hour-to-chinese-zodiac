@@ -1,0 +1,54 @@
+{
+  "name": "hour-to-chinese-zodiac",
+  "version": "0.0.1",
+  "description": "Convert hour to chinese zodiac name: 8 → 'dragon'",
+  "license": "MIT",
+  "repository": "VovanR/hour-to-chinese-zodiac",
+  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "prepush": "npm test",
+    "test": "xo && nyc ava",
+    "tdd": "ava -w",
+    "release-patch": "mversion patch",
+    "release-minor": "mversion minor",
+    "release-major": "mversion major",
+    "deploy": "gh-pages-deploy"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "fromat",
+    "separate",
+    "thousands",
+    "number"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "conventional-changelog-cli": "^1.2.0",
+    "coveralls": "^2.11.9",
+    "cz-conventional-changelog": "^1.1.6",
+    "husky": "^0.11.4",
+    "mversion": "^1.10.1",
+    "nyc": "^6.4.4",
+    "xo": "^0.15.1"
+  },
+  "bugs": {
+    "url": "https://github.com/VovanR/hour-to-chinese-zodiac/issues"
+  },
+  "homepage": "https://github.com/VovanR/hour-to-chinese-zodiac#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "gh-pages-deploy": {
+    "staticpath": "example",
+    "noprompt": false
+  }
+}

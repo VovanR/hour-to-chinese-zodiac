@@ -1,0 +1,37 @@
+import test from 'ava';
+import fn from './';
+
+const r = {
+	rat: [0, 23],
+	ox: [1, 2],
+	tiger: [3, 4],
+	rabbit: [5, 6],
+	dragon: [7, 8],
+	snake: [9, 10],
+	horse: [11, 12],
+	goat: [13, 14],
+	monkey: [15, 16],
+	rooster: [17, 18],
+	dog: [19, 20],
+	pig: [21, 22]
+};
+
+test('is function', t => {
+	t.is(typeof fn, 'function');
+});
+
+test('is works', t => {
+	Object.keys(r).forEach(zodiac => {
+		r[zodiac].forEach(hour => {
+			t.is(fn(hour), zodiac);
+		});
+	});
+});
+
+test('is works with string', t => {
+	Object.keys(r).forEach(zodiac => {
+		r[zodiac].forEach(hour => {
+			t.is(fn(String(hour)), zodiac);
+		});
+	});
+});
