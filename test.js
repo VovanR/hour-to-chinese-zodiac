@@ -20,7 +20,7 @@ test('is function', t => {
 	t.is(typeof fn, 'function');
 });
 
-test('is works', t => {
+test('should convert number', t => {
 	Object.keys(r).forEach(zodiac => {
 		r[zodiac].forEach(hour => {
 			t.is(fn(hour), zodiac);
@@ -28,10 +28,14 @@ test('is works', t => {
 	});
 });
 
-test('is works with string', t => {
+test('should convert string', t => {
 	Object.keys(r).forEach(zodiac => {
 		r[zodiac].forEach(hour => {
 			t.is(fn(String(hour)), zodiac);
 		});
 	});
+});
+
+test('should not convert empty value', t => {
+	t.is(fn(), '');
 });

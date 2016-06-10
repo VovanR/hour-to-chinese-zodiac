@@ -17,7 +17,8 @@ function hourToChineseZodiac(hour) {
 		hour > 4 ? 'rabbit' :
 		hour > 2 ? 'tiger' :
 		hour > 0 ? 'ox' :
-		'rat';
+		hour > -1 ? 'rat' :
+		'';
 }
 
 module.exports = hourToChineseZodiac;
