@@ -1,3 +1,13 @@
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/vovanr/hour-to-chinese-zodiac/compare/v0.1.1...v0.1.2) (2016-06-10)
+
+
+### Bug Fixes
+
+* **lib:** Fix converting empty values and > 24 hours ([0edadfd](https://github.com/vovanr/hour-to-chinese-zodiac/commit/0edadfd))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/vovanr/hour-to-chinese-zodiac/compare/v0.1.0...v0.1.1) (2016-06-10)
 
