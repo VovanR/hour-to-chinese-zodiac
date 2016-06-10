@@ -37,5 +37,9 @@ test('should convert string', t => {
 });
 
 test('should not convert empty value', t => {
-	t.is(fn(), '');
+	[undefined, null, ''].forEach(arg => t.is(fn(arg), ''));
+});
+
+test('should not convert value > 24 hours', t => {
+	t.is(fn(25), '');
 });

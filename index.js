@@ -5,6 +5,10 @@
  * @return {String} chinese zodiac name
  */
 function hourToChineseZodiac(hour) {
+	if (!hour && hour !== 0 || hour > 24) {
+		return '';
+	}
+
 	return hour > 22 ? 'rat' :
 		hour > 20 ? 'pig' :
 		hour > 18 ? 'dog' :
@@ -17,8 +21,7 @@ function hourToChineseZodiac(hour) {
 		hour > 4 ? 'rabbit' :
 		hour > 2 ? 'tiger' :
 		hour > 0 ? 'ox' :
-		hour > -1 ? 'rat' :
-		'';
+		'rat';
 }
 
 module.exports = hourToChineseZodiac;
