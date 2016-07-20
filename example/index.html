@@ -15,7 +15,7 @@
 <div class="converter__input">
 	<input
 		class="converter__control converter__control_name_input"
-		value="8"
+		value=""
 		min="0"
 		max="23"
 		type="number"
@@ -45,6 +45,7 @@
 	var inputControl = document.querySelector('.converter__control_name_input')
 	var resultControl = document.querySelector('.converter__control_name_result')
 
+	inputControl.value = new Date().getHours()
 	inputControl.addEventListener('input', renderResult)
 
 	function renderResult() {
