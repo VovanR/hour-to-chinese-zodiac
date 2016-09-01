@@ -39,8 +39,13 @@
 	width: 100%;
 }
 
-.converter__control_name_result {
-	width: 100%;
+.converter__control_name_result-ch {
+	flex: 1;
+	background-color: #fbfbfb;
+}
+
+.converter__control_name_result-en {
+	flex: 2;
 	background-color: #fbfbfb;
 }
 

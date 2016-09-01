@@ -25,13 +25,20 @@
 
 <div class="converter__output">
 	<input
-		class="converter__control converter__control_name_result"
+		class="converter__control converter__control_name_result-ch"
 		value=""
 		readonly
 		type="text"
 		placeholder="result"
 		/>
-	</label>
+
+	<input
+		class="converter__control converter__control_name_result-en"
+		value=""
+		readonly
+		type="text"
+		placeholder="result"
+		/>
 </div>
 
 <a class="repo" href="https://github.com/vovanr/hour-to-chinese-zodiac">MIT&nbsp;©&nbsp;<span>Vladimir Rodkin</span></a>
@@ -42,14 +49,32 @@
 (function (hourToChineseZodiac) {
 	'use strict'
 
+	var c = {
+		rat: '子',
+		ox: '丑',
+		tiger: '寅',
+		rabbit: '卯',
+		dragon: '辰',
+		snake: '巳',
+		horse: '午',
+		goat: '未',
+		monkey: '申',
+		rooster: '酉',
+		dog: '戌',
+		pig: '亥',
+	}
+
 	var inputControl = document.querySelector('.converter__control_name_input')
-	var resultControl = document.querySelector('.converter__control_name_result')
+	var resultControlEn = document.querySelector('.converter__control_name_result-en')
+	var resultControlCh = document.querySelector('.converter__control_name_result-ch')
 
 	inputControl.value = new Date().getHours()
 	inputControl.addEventListener('input', renderResult)
 
 	function renderResult() {
-		resultControl.value = hourToChineseZodiac(inputControl.value)
+		var val = hourToChineseZodiac(inputControl.value)
+		resultControlEn.value = val
+		resultControlCh.value = c[val] || ''
 	}
 
 	renderResult()
