@@ -5,7 +5,7 @@
  * @return {String} chinese zodiac name
  */
 function hourToChineseZodiac(hour) {
-	if (!hour && hour !== 0 || hour > 24) {
+	if ((!hour && hour !== 0) || hour > 24) {
 		return '';
 	}
 
