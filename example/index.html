@@ -33,6 +33,14 @@
 		/>
 
 	<input
+		class="converter__control converter__control_name_result-symbol"
+		value=""
+		readonly
+		type="text"
+		placeholder="result"
+		/>
+
+	<input
 		class="converter__control converter__control_name_result-en"
 		value=""
 		readonly
@@ -64,9 +72,25 @@
 		pig: '亥',
 	}
 
+	var s = {
+		rat: '\u{1F400}',
+		ox: '\u{1F402}',
+		tiger: '\u{1F405}',
+		rabbit: '\u{1F407}',
+		dragon: '\u{1F409}',
+		snake: '\u{1F40D}',
+		horse: '\u{1F40E}',
+		goat: '\u{1F410}',
+		monkey: '\u{1F412}',
+		rooster: '\u{1F413}',
+		dog: '\u{1F415}',
+		pig: '\u{1F416}',
+	}
+
 	var inputControl = document.querySelector('.converter__control_name_input')
 	var resultControlEn = document.querySelector('.converter__control_name_result-en')
 	var resultControlCh = document.querySelector('.converter__control_name_result-ch')
+	var resultControlSymbol = document.querySelector('.converter__control_name_result-symbol')
 
 	inputControl.value = new Date().getHours()
 	inputControl.addEventListener('input', renderResult)
@@ -75,6 +99,7 @@
 		var val = hourToChineseZodiac(inputControl.value)
 		resultControlEn.value = val
 		resultControlCh.value = c[val] || ''
+		resultControlSymbol.value = s[val] || ''
 	}
 
 	renderResult()

@@ -44,6 +44,11 @@
 	background-color: #fbfbfb;
 }
 
+.converter__control_name_result-symbol {
+	flex: 1;
+	background-color: #fbfbfb;
+}
+
 .converter__control_name_result-en {
 	flex: 2;
 	background-color: #fbfbfb;
