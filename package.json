@@ -15,7 +15,7 @@
     "release-patch": "mversion patch",
     "release-minor": "mversion minor",
     "release-major": "mversion major",
-    "deploy": "gh-pages-deploy"
+    "deploy": "gh-pages -d example"
   },
   "files": [
     "index.js"
@@ -33,6 +33,7 @@
     "conventional-changelog-cli": "^1.2.0",
     "coveralls": "^2.11.16",
     "cz-conventional-changelog": "^1.2.0",
+    "gh-pages": "^1.1.0",
     "husky": "^0.13.1",
     "mversion": "^1.10.1",
     "nyc": "^10.1.2",
@@ -46,9 +47,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "gh-pages-deploy": {
-    "staticpath": "example",
-    "noprompt": false
   }
 }
