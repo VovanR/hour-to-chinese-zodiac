@@ -1,8 +1,14 @@
 /* eslint-disable no-nested-ternary */
 
 /**
- * @param {Number|String} hour
- * @return {String} chinese zodiac name
+ * Convert hour to chinese zodiac name
+ *
+ * @param {number|string} hour
+ * @return {string} chinese zodiac name
+ *
+ * @example
+ * hourToChineseZodiac(8);
+ * //=> 'dragon'
  */
 function hourToChineseZodiac(hour) {
 	if ((!hour && hour !== 0) || hour > 24) {

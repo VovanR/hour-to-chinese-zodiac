@@ -15,7 +15,7 @@ Demo: [vovanr.github.io/hour-to-chinese-zodiac][demo]
 
 ## Install
 
-```
+```shell
 npm install --save hour-to-chinese-zodiac
 ```
 
@@ -38,22 +38,22 @@ hourToChineseZodiac();
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
 [wiki-chinese-zodiac]: https://en.wikipedia.org/wiki/Chinese_zodiac#Hours
-[demo]: http://vovanr.github.io/hour-to-chinese-zodiac
+[demo]: https://vovanr.github.io/hour-to-chinese-zodiac
 
-[commitizen-url]: http://commitizen.github.io/cz-cli/
+[commitizen-url]: https://commitizen.github.io/cz-cli/
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
 
 [codestyle-url]: https://github.com/sindresorhus/xo
 [codestyle-image]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square
 
 [npm-url]: https://npmjs.org/package/hour-to-chinese-zodiac
-[npm-image]: http://img.shields.io/npm/v/hour-to-chinese-zodiac.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/hour-to-chinese-zodiac.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/VovanR/hour-to-chinese-zodiac
-[travis-image]: http://img.shields.io/travis/VovanR/hour-to-chinese-zodiac.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/VovanR/hour-to-chinese-zodiac.svg?style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/VovanR/hour-to-chinese-zodiac
-[coveralls-image]: http://img.shields.io/coveralls/VovanR/hour-to-chinese-zodiac.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/VovanR/hour-to-chinese-zodiac.svg?style=flat-square
 
 [depstat-url]: https://david-dm.org/VovanR/hour-to-chinese-zodiac
 [depstat-image]: https://david-dm.org/VovanR/hour-to-chinese-zodiac.svg?style=flat-square
