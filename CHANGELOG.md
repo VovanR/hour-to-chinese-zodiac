@@ -1,3 +1,8 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/VovanR/hour-to-chinese-zodiac/compare/v0.1.2...v0.2.0) (2018-02-02)
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/vovanr/hour-to-chinese-zodiac/compare/v0.1.1...v0.1.2) (2016-06-10)
 
