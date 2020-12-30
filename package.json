@@ -6,16 +6,17 @@
   "repository": "VovanR/hour-to-chinese-zodiac",
   "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
   "engines": {
-    "node": ">=4"
+    "node": ">=10"
   },
   "scripts": {
     "prepush": "npm test",
-    "test": "xo && nyc ava",
+    "test": "xo --no-esnext && nyc ava",
     "tdd": "ava -w",
     "release-patch": "mversion patch",
     "release-minor": "mversion minor",
     "release-major": "mversion major",
-    "deploy": "gh-pages -d example"
+    "deploy": "gh-pages -d example",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "files": [
     "index.js"
@@ -29,15 +30,15 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "ava": "^0.25.0",
-    "conventional-changelog-cli": "^1.3.8",
-    "coveralls": "^3.0.0",
-    "cz-conventional-changelog": "^2.1.0",
-    "gh-pages": "^1.1.0",
-    "husky": "^0.14.3",
-    "mversion": "^1.10.1",
-    "nyc": "^11.4.1",
-    "xo": "^0.18.2"
+    "ava": "^3.14.0",
+    "conventional-changelog-cli": "^2.1.1",
+    "coveralls": "^3.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "gh-pages": "^3.1.0",
+    "husky": "^4.3.6",
+    "mversion": "^2.0.1",
+    "nyc": "^15.1.0",
+    "xo": "^0.36.1"
   },
   "bugs": {
     "url": "https://github.com/VovanR/hour-to-chinese-zodiac/issues"
@@ -46,6 +47,14 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "xo": {
+    "space": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
     }
   }
 }
