@@ -4,24 +4,29 @@
   "description": "Convert hour to chinese zodiac name: 8 → 'dragon'",
   "license": "MIT",
   "repository": "VovanR/hour-to-chinese-zodiac",
+  "homepage": "https://github.com/VovanR/hour-to-chinese-zodiac#readme",
+  "bugs": "https://github.com/VovanR/hour-to-chinese-zodiac/issues",
   "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "main": "index.js",
   "engines": {
     "node": ">=10"
   },
   "scripts": {
-    "prepush": "npm test",
-    "test": "xo --no-esnext && nyc ava",
+    "test": "xo && nyc ava",
     "tdd": "ava -w",
     "release-patch": "mversion patch",
     "release-minor": "mversion minor",
     "release-major": "mversion major",
-    "deploy": "gh-pages -d example",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "deploy": "gh-pages -d example"
   },
   "files": [
     "index.js"
   ],
-  "main": "index.js",
   "keywords": [
     "convert",
     "hour",
@@ -40,17 +45,15 @@
     "nyc": "^15.1.0",
     "xo": "^0.36.1"
   },
-  "bugs": {
-    "url": "https://github.com/VovanR/hour-to-chinese-zodiac/issues"
-  },
-  "homepage": "https://github.com/VovanR/hour-to-chinese-zodiac#readme",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "xo": {
+    "esnext": false,
     "space": true
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
   },
   "husky": {
     "hooks": {
