@@ -21,23 +21,25 @@ test('is function', t => {
 });
 
 test('should convert number', t => {
-  Object.keys(r).forEach(zodiac => {
-    r[zodiac].forEach(hour => {
+  for (const [zodiac, hours] of Object.entries(r)) {
+    for (const hour of hours) {
       t.is(fn(hour), zodiac);
-    });
-  });
+    }
+  }
 });
 
 test('should convert string', t => {
-  Object.keys(r).forEach(zodiac => {
-    r[zodiac].forEach(hour => {
+  for (const [zodiac, hours] of Object.entries(r)) {
+    for (const hour of hours) {
       t.is(fn(String(hour)), zodiac);
-    });
-  });
+    }
+  }
 });
 
 test('should not convert empty value', t => {
-  [undefined, null, ''].forEach(arg => t.is(fn(arg), ''));
+  for (const arg of [undefined, null, '']) {
+    t.is(fn(arg), '');
+  }
 });
 
 test('should not convert value > 24 hours', t => {
