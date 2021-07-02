@@ -1,5 +1,8 @@
 # hour-to-chinese-zodiac
 
+<img align="right" width="120" height="120"
+     src="./logo.svg" alt="Hour to Chinese zodiac logo">
+
 [![Commitizen friendly][commitizen-image]][commitizen-url]
 [![XO code style][codestyle-image]][codestyle-url]
 
