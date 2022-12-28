@@ -50,8 +50,8 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 [npm-url]: https://npmjs.org/package/hour-to-chinese-zodiac
 [npm-image]: https://img.shields.io/npm/v/hour-to-chinese-zodiac.svg?style=flat-square
 
-[build-url]: https://github.com/VovanR/hour-to-chinese-zodiac/actions?query=workflow%3A%22Tests%22
-[build-image]: https://img.shields.io/github/workflow/status/VovanR/hour-to-chinese-zodiac/Tests?style=flat-square
+[build-url]: https://github.com/VovanR/hour-to-chinese-zodiac/actions/workflows/test-workflow.yml
+[build-image]: https://img.shields.io/github/actions/workflow/status/vovanr/hour-to-chinese-zodiac/test-workflow.yml?style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/VovanR/hour-to-chinese-zodiac
 [coveralls-image]: https://img.shields.io/coveralls/VovanR/hour-to-chinese-zodiac.svg?style=flat-square
