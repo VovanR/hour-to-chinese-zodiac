@@ -9,8 +9,6 @@
 [![NPM version][npm-image]][npm-url]
 [![Build Status][build-image]][build-url]
 [![Coveralls Status][coveralls-image]][coveralls-url]
-[![Dependency Status][depstat-image]][depstat-url]
-[![DevDependency Status][depstat-dev-image]][depstat-dev-url]
 
 > Convert hour to [chinese zodiac][wiki-chinese-zodiac] name: 8 → 'dragon'
 
@@ -57,9 +55,3 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
 [coveralls-url]: https://coveralls.io/r/VovanR/hour-to-chinese-zodiac
 [coveralls-image]: https://img.shields.io/coveralls/VovanR/hour-to-chinese-zodiac.svg?style=flat-square
-
-[depstat-url]: https://david-dm.org/VovanR/hour-to-chinese-zodiac
-[depstat-image]: https://david-dm.org/VovanR/hour-to-chinese-zodiac.svg?style=flat-square
-
-[depstat-dev-url]: https://david-dm.org/VovanR/hour-to-chinese-zodiac
-[depstat-dev-image]: https://david-dm.org/VovanR/hour-to-chinese-zodiac/dev-status.svg?style=flat-square
